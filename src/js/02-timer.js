@@ -41,7 +41,8 @@ const onClickBtnStart = e => {
     isStartTimer = false;
     // return;
   }
-  const getEndDateObject = dateToObject(dateEnd - Date.now());
+  // const getEndDateObject = dateToObject(dateEnd - Date.now());
+  dateToObject(dateEnd - Date.now());
   startTimer(dateEnd);
 };
 
@@ -96,7 +97,7 @@ const startTimer = dateEnd => {
   notify.info('Timer started');
 
   timerId = setInterval(() => {
-    timerCount = timerEnd - Date.now();
+    const timerCount = timerEnd - Date.now();
     isStartTimer = true;
     if (timerCount <= 0) {
       clearInterval(timerId);
