@@ -93,7 +93,7 @@ const startTimer = dateEnd => {
   notify.info('Timer started');
 
   timerId = setInterval(() => {
-    let timerCount = timerEnd - Date.now();
+    const timerCount = timerEnd - Date.now();
     isStartTimer = true;
     if (timerCount <= 0) {
       clearInterval(timerId);
