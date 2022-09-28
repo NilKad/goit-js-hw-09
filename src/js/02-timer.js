@@ -104,7 +104,5 @@ const startTimer = dateEnd => {
   }, 1000);
 };
 
-const stopTimer = () => {};
-
 const dateOut = new flatpickr(dateInputRef, optionsFlatpickr);
 startBtnRef.addEventListener('click', onClickBtnStart);
