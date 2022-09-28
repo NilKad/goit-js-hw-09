@@ -70,10 +70,6 @@ const checkInputDateVsCurrent = selectedDates => {
 };
 
 const dateToObject = dateInput => {
-  // dateInput = 4000000;
-  // dateInput = 86344626;
-  // dateInput = 171258626;
-  // dateInput = 343861626;
   dateInput = Math.floor(dateInput / 1000);
 
   const sec = dateInput % 60;
